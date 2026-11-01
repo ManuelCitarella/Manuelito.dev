@@ -129,8 +129,14 @@ header nav a {
 
 #home-link img {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
+}
+
+#home-link {
+  width: 36px;
+  justify-content: center;
+  padding: 4px;
 }
 
 /* Titoli */
