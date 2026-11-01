@@ -97,6 +97,7 @@ header nav a {
 }
 
 #theme-toggle,
+#home-link,
 #about-link,
 #projects-link,
 #contacts-link {
@@ -118,6 +119,7 @@ header nav a {
 }
 
 #theme-toggle:hover,
+#home-link:hover,
 #about-link:hover,
 #projects-link:hover,
 #contacts-link:hover {
