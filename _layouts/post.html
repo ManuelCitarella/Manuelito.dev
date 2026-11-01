@@ -5,8 +5,32 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
   <p class="post-meta">Published on {{ page.date | date: "%d/%m/%Y" }}</p>
-  
+
   <div class="post-content">
     {{ content }}
   </div>
 </article>
+
+{% assign older_post = nil %}
+{% assign current_post_found = false %}
+{% for post in site.posts %}
+  {% if current_post_found %}
+    {% assign older_post = post %}
+    {% break %}
+  {% endif %}
+  {% if post.url == page.url %}
+    {% assign current_post_found = true %}
+  {% endif %}
+{% endfor %}
+
+{% if older_post %}
+  <section class="latest-writing" aria-labelledby="latest-writing-title">
+    <h2 id="latest-writing-title">Latest writing</h2>
+    <ul>
+      <li>
+        <a href="{{ older_post.url | relative_url }}">{{ older_post.title }}</a>
+        <small>{{ older_post.date | date: "%b %d, %Y" }}</small>
+      </li>
+    </ul>
+  </section>
+{% endif %}

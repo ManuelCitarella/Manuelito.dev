@@ -221,6 +221,19 @@ footer {
   color: var(--color-text);
 }
 
+/* Continue reading */
+.latest-writing {
+  margin-top: 44px;
+}
+
+.latest-writing h2 {
+  margin-bottom: 18px;
+  font-family: monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 /* About */
 .bio-label {
   font-family: monospace;
@@ -292,6 +305,16 @@ footer {
 
 .timeline-content p:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.timeline-item-current {
+  background: var(--nb-accent);
+  color: #000;
+}
+
+.timeline-item-current .timeline-year,
+.timeline-item-current .timeline-content {
+  color: #000;
 }
 
 /* Contacts */

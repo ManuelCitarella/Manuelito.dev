@@ -1,15 +1,17 @@
 ---
 layout: default
-title: Personal Projects
+title: My Path
 permalink: /projects/
 ---
 
-<h1>Personal Projects</h1>
+<h1>My Path</h1>
 
 <div class="timeline">
   {% assign years = site.projects | sort: "year" | reverse %}
+  {% assign current_year = site.time | date: "%Y" %}
   {% for project in years %}
-    <div class="timeline-item">
+    {% assign project_year = project.year | append: "" %}
+    <div class="timeline-item{% if project_year == current_year %} timeline-item-current{% endif %}">
       <div class="timeline-year">{{ project.year }}</div>
       <div class="timeline-content">
         {{ project.content }}
