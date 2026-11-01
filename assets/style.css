@@ -127,6 +127,12 @@ header nav a {
   box-shadow: 1px 1px 0 var(--nb-shadow-color);
 }
 
+#home-link img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
 /* Titoli */
 h1 {
   font-size: 1.8rem;
