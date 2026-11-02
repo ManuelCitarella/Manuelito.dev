@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to Manuelito > Dev"
-date: 2026-09-15
+date: 2026-11-01
 ---
 
 This is a small place on the internet where I can write things when I want to, without putting too much pressure on myself.
