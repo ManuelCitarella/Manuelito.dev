@@ -43,13 +43,13 @@
   --nb-shadow-color: #fff;
   --nb-accent: #ffde59;
   --nb-accent-2: #ff6b6a;
-  --nb-header-text: #fff;
+  --nb-header-text: var(--nb-accent);
   --nb-header-bg: var(--color-surface);
   --nb-button-bg: var(--nb-accent);
 }
 
 [data-theme="dark"] li a {
-  color: var(--nb-accent);
+  color: var(--color-heading);
 }
 
 body {
